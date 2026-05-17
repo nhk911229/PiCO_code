@@ -22,7 +22,7 @@ from resnet import *
 from utils.utils_algo import *
 from utils.utils_loss import partial_loss, SupConLoss
 # from utils.cub200 import load_cub200
-# from utils.cifar10 import load_cifar10
+from utils.cifar10 import load_cifar10
 # from utils.cifar100 import load_cifar100
 
 
