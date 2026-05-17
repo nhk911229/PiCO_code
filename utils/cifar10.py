@@ -29,6 +29,7 @@ def load_cifar10(partial_rate, batch_size):
     test_dataset = dsets.CIFAR10( #下載測試資料集
         root='./data', 
         train=False, #測試資料集中有 10000 張圖片，每張圖片標有0-9的其中一個物件
+        download=True, #下載
         transform=test_transform
     )
 
