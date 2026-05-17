@@ -19,11 +19,11 @@ import tensorboard_logger as tb_logger
 import numpy as np
 from model import PiCO
 from resnet import *
-from utils.utils_algo import *
-from utils.utils_loss import partial_loss, SupConLoss
-from utils.cub200 import load_cub200
-from utils.cifar10 import load_cifar10
-from utils.cifar100 import load_cifar100
+from utils_algo import *
+from utils_loss import partial_loss, SupConLoss
+from cub200 import load_cub200
+from cifar10 import load_cifar10
+from cifar100 import load_cifar100
 
 
 # 設定 PyTorch tensor 印出來的格式只能到小數點後 2 位、並且不可以使用科學記號表示法
