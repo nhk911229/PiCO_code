@@ -279,7 +279,7 @@ def train(train_loader, model, loss_fn, loss_cont_fn, optimizer, epoch, args, tb
             for i in range(args.batch_size):
                 pseudo_labels_list.append(features_cont.cpu().detach().numpy().tolist()[i])
                 target_list.append(pseudo_target_cont.cpu().detach().numpy().tolist()[i])
-            print('time:', time.time() - t1)
+            # print('time:', time.time() - t1)
 
         batch_size = cls_out.shape[0]
         pseudo_target_cont = pseudo_target_cont.contiguous().view(-1, 1)
@@ -420,4 +420,4 @@ def plot_TSNE(args):
 if __name__ == '__main__':
     args = parser.parse_args()
     main()
-    # plot_TSNE(args=args)
+    plot_TSNE(args=args)
