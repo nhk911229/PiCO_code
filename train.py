@@ -271,7 +271,7 @@ def train(train_loader, model, loss_fn, loss_cont_fn, optimizer, epoch, args, tb
         Y_true = true_labels.long().detach().cuda()
         # for showing training accuracy and will not be used when training
 
-        cls_out, features_cont, pseudo_target_cont, score_prot = model(X_w, X_s, Y, args)
+        cls_out, features_cont, pseudo_target_cont, score_prot, _ = model(X_w, X_s, Y, args)
 
         # print:保存最后的epoch中的pseudo_labels与labels
         t1 = time.time()
