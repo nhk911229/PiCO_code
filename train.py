@@ -420,4 +420,4 @@ def plot_TSNE(args):
 if __name__ == '__main__':
     args = parser.parse_args()
     main()
-    plot_TSNE(args=args)
+    # plot_TSNE(args=args)
