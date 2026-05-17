@@ -144,7 +144,7 @@ class PiCO(nn.Module):
         #---------------------------------------------------------------
         predicted_scores = torch.softmax(output, dim=1) * partial_Y #過濾掉候選標籤以外的預測機率
         max_scores, pseudo_labels_b = torch.max(predicted_scores, dim=1) #從候選標籤中選出偽標籤
-        print('pseudo_labels_b:', pseudo_labels_b)
+        # print('pseudo_labels_b:', pseudo_labels_b)
 
         #--------------------------------------------------------------
         #  Step3: 計算 query embedding 和 prototypy 的相似度
